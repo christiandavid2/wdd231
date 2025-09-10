@@ -10,8 +10,8 @@
   .navigation{border-top:none}
   .navigation ul{
     display: flex !important;            /* row */
-    justify-content: flex-end;
-    
+
+
     gap:.25rem; 
   }
   .navigation a{
