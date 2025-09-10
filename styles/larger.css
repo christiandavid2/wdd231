@@ -1,0 +1,45 @@
+/* Larger viewports */
+@media (min-width: 768px){
+  /* Show horizontal nav; hide burger */
+  header{
+    padding:1.5rem 1rem;
+    background-color: black;
+    color: white;
+  }
+  #menu{display:none}
+  .navigation{border-top:none}
+  .navigation ul{
+    display: flex !important;            /* row */
+    justify-content: flex-end;
+    
+    gap:.25rem; 
+  }
+  .navigation a{
+    border-bottom:3px solid transparent;  /* prevents twitch */
+    border-left:none; padding:.9rem 1rem; border-radius:8px;
+  }
+  .navigation a:hover{background:transparent; border-bottom-color:var(--border)}
+  .navigation a.active{border-bottom-color:var(--brand); background:transparent}
+
+  main{
+    display:grid;
+    grid-template-columns: 2fr 1fr;   /* about + photo side-by-side */
+    grid-auto-rows: min-content;
+    gap:1rem;
+  }
+  h1{grid-column:1 / -1}
+
+  #about-me{grid-column:1}
+  #student-photo{grid-column:2}
+  #courses{grid-column:1 / -1}
+
+  /* Course grid expands */
+  #course-list{
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+@media (min-width: 1100px){
+  h1{font-size:2rem}
+  .site-name{font-size:1.25rem}
+}

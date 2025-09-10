@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 231 Home Page" />
+  <meta name="author" content="Christian Emmanuel David" />
+  <title>WDD 231 - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+</head>
+<body>
+  <header>
+    <img src="image/lokg.jpg" alt="Site Logo" class="logo" />
+    <span class="site-name">Christian Emmanuel David</span>
+    <button id="menu" aria-label="Menu">&#9776;</button>
+  </header>
+
+  <nav class="navigation">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="chamber/">Chamber Project</a></li>
+      <li><a href="final/">Final Project</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>I am an enthusiastic and adaptable student pursuing a Web and Computer Programming certificate at Brigham Young University—Idaho. Here, I am deepening my understanding of various programming languages and frameworks. My coursework and hands-on projects have equipped me with a solid foundation in Python, HTML, CSS, Java, and JavaScript, allowing me to tackle a diverse range of programming challenges. As a Data Analyst at Springboard, I have refined my analytical skills by working with complex datasets. I excel in partitioning and organizing information, ensuring data accuracy and integrity. My efforts have often led to streamlined workflows, which not only enhance productivity but also provide valuable insights for decision-making. Additionally, during my mission work with The Church of Jesus Christ of Latter-day Saints, I spearheaded the creation of an innovative reporting system. This initiative proved instrumental in boosting missionary effectiveness by an impressive 20%. In this role, I also had the privilege of training and mentoring over 100 missionaries, equipping them with the necessary skills to excel in their assignments, which significantly contributed to their high performance and overall success. Prior to these experiences, I worked as a Customer Attendant at Valuemart Supermarket, where I gained significant customer service and inventory management expertise. I was responsible for optimizing store operations, which not only improved efficiency but also enhanced customer satisfaction and resulted in increased sales. I am eager to apply my skills in data analysis, problem-solving, and effective communication within a professional environment. I am committed to continuous learning and growth in the tech industry, looking forward to contributing to innovative projects and collaborating with like-minded professionals.</p>
+    </section>
+    <section id="photo">
+      <h2>Student Picture:</h2>
+      <img src="image/cnrist.jpg" alt="About Me">
+    </section>
+
+    </section>
+
+    <section>
+      <h2>Certificate Courses</h2>
+      <div id="courses" class="course-cards"></div>
+      <div id="course-buttons">
+        <button id="all">All Courses</button>
+        <button id="wdd">WDD Courses</button>
+        <button id="cse">CSE Courses</button>
+      </div>
+      <div id="course-list" class="course-cards"></div>
+      <p>Total Credits: <span id="total-credits"></span></p>
+
+    </section>
+
+    <section>
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+        <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+        <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+        <li><a href="https://caniuse.com/" target="_blank">Can I use...</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://github.com/christiandavid2" target="_blank">GitHub</a>|
+      <a href="http://linkedin.com/in/christian-david-62576a31a" target="_blank">LinkedIn</a>|
+      <a href="https://x.com/cemmanuel833?s=21" target="_blank">Twitter</a>
+
+    </p>
+    <p>
+      &copy; <span id="year"></span> | Christian Emmanuel David | Abuja Nigeria
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/data.js" defer></script>
+  <script src="scripts/coures.js" defer></script>
+</body>
+</html>
