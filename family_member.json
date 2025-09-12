@@ -1,0 +1,32 @@
+{
+    "family_name": "Doe",
+    "moved_in_date": "2010-05-15",
+    "no_of_members": 4,
+    "visiting_by_bishop": true,
+    "family_members": [
+        {
+        "name": "John Doe",
+        "relation": "Father",
+        "date_of_birth": "1973-05-15",
+        "occupation": "Engineer"
+        },
+        {
+        "name": "Jane Doe",
+        "relation": "Mother",
+        "date_of_birth": "1975-08-25",
+        "occupation": "Teacher"
+        },
+        {
+        "name": "Jim Doe",
+        "relation": "Brother",
+        "date_of_birth": "2001-05-15",
+        "occupation": "Student"
+        },
+        {
+        "name": "Jill Doe",
+        "relation": "Sister",
+        "date_of_birth": "2005-05-15",
+        "occupation": "High School Student"
+        }
+    ]
+}
