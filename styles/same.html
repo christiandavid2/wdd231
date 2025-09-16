@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Listing</title>
-    <style>
-        .business-card {
-            display: flex;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 20px;
-            width: 300px;
-            font-family: Arial, sans-serif;
-        }
-        .business-card img {
-            width: 80px;
-            height: 80px;
-            margin-right: 20px;
-        }
-        .business-info {
-            display: flex;
-            flex-direction: column;
-        }
-        .business-info h1, .business-info h2 {
-            margin: 0;
-        }
-        .business-info p {
-            margin: 5px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Directory</title>
+  <style>
+    .directory {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .member {
+      display: flex;             /* put everything in a line */
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      white-space: nowrap;       /* keep text in one line */
+      overflow: hidden;          /* prevent overflow */
+      text-overflow: ellipsis;   /* show "..." if text too long */
+    }
+
+    .member div {
+      margin-right: 20px;        /* space between items */
+      flex: 1;                   /* allow each part to adjust size */
+    }
+
+    .member a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    .member a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <div class="business-card">
-        <img src="your-image-url.jpg" alt="Business Logo">
-        <div class="business-info">
-            <h1>Business Name</h1>
-            <h2>Business Tag Line</h2>
-            <p>Email: info@gmail.com</p>
-            <p>Phone: 800-555-1234</p>
-            <p>URL: mybusiness.com</p>
-        </div>
+  <div class="directory">
+    <div class="member">
+      <div><strong>Economy Superiority</strong></div>
+      <div>123 Main Street, London</div>
+      <div>+44 1234 567890</div>
+      <div>London, UK</div>
+      <div>A platform to showcase economic growth initiatives</div>
+      <div><a href="https://economysuperiority.com">Visit Website</a></div>
     </div>
+  </div><div class="directory">
+    <div class="member">
+      <div><strong>Economy Superiority</strong></div>
+      <div>123 Main Street, London</div>
+      <div>+44 1234 567890</div>
+      <div>London, UK</div>
+      <div>A platform to showcase economic growth initiatives</div>
+      <div><a href="https://economysuperiority.com">Visit Website</a></div>
+    </div>
+  </div>
+  <div class="directory">
+    <div class="member">
+      <div><strong>Economy Superiority</strong></div>
+      <div>123 Main Street, London</div>
+      <div>+44 1234 567890</div>
+      <div>London, UK</div>
+      <div>A platform to showcase economic growth initiatives</div>
+      <div><a href="https://economysuperiority.com">Visit Website</a></div>
+    </div>
+  </div>
+
 </body>
 </html>

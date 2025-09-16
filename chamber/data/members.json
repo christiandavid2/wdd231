@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Sunrise Hardware Co.",
+    "address": "12 Market St, Central City",
+    "phone": "0801 234 5678",
+    "website": "https://www.sunrisehardware.com.au/",
+    "image": "images/sunrise-logo.png",
+    "membership": 3,
+    "description": "Tools, fixtures, and construction supplies."
+  },
+  {
+    "name": "GreenLeaf Cafe",
+    "address": "5 Garden Ave, Riverside",
+    "phone": "0802 345 6789",
+    "website": "https://headycup.com/collections/all-coffee?gad_source=1&gad_campaignid=22996259265&gbraid=0AAAAApJLbDbpQYtIr7DmJd0-dFoxMURuq&gclid=CjwKCAjwz5nGBhBBEiwA-W6XRMOv6w0XsVwyVisuQkD6QKRw4MIj4ka5FJl5y6UNyd33htjv1aX5TxoCs8IQAvD_BwE",
+    "image": "images/logo_1.avif",
+    "membership": 2,
+    "description": "Local cafe with farm-to-table menu."
+  },
+  {
+    "name": "Spark IT Solutions",
+    "address": "34 Tech Park, Midtown",
+    "phone": "0803 456 7890",
+    "website": "https://www.sparxitsolutions.com/",
+    "image": "images/ai-banner.webp",
+    "membership": 3,
+    "description": "IT services and software development."
+  },
+  {
+    "name": "Harbor Travel Agency",
+    "address": "9 Ocean Road, Dockside",
+    "phone": "0804 567 8901",
+    "website": "https://www.harbor-travel.com/",
+    "image": "images/logo.png",
+    "membership": 1,
+    "description": "Travel booking and local tours."
+  },
+  {
+    "name": "Blossom Florist",
+    "address": "22 Flower Lane, East End",
+    "phone": "0805 678 9012",
+    "website": "https://www.blossomflorist.co/?srsltid=AfmBOopi6tik1lc23NUS4JBuy8gyu2jjYUiQlXS5MT7pGVYyZs8hhfGZ",
+    "image": "images/blouetr.webp",
+    "membership": 2,
+    "description": "Fresh flowers and event decoration."
+  },
+  {
+    "name": "Kofi's Bakery",
+    "address": "77 Baker St, Old Town",
+    "phone": "0806 789 0123",
+    "website": "https://kofibaker.com/",
+    "image": "images/desktop_header.png",
+    "membership": 1,
+    "description": "Breads, pastries, and catering."
+  },
+  {
+    "name": "Aqua Plumbing Services",
+    "address": "101 Waterworks Rd, Northside",
+    "phone": "0807 890 1234",
+    "website": "https://aquaplumbing.example.com",
+    "image": "images/logo (1).png",
+    "membership": 3,
+    "description": "Residential and commercial plumbing."
+  }
+]
