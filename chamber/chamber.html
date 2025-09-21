@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="chamber of commerce" />
+    <meta name="author" content="Christian Emmanuel David" />
+    <meta property="og:title" content="WDD 231 - Home" />
+    <meta property="og:description" content="WDD 231 Home Page" />
+    <meta property="og:image" content="image/favicon.ico" />
+    <meta property="og:url" content="https://christiandavid2.github.io/wdd231/" />
+    <title>Chamber of Commerce</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber_small.css">
+    <link rel="stylesheet" href="styles/chamber_larger.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+                <img src="images/lokg.jpg" alt="Chamber Logo" class="logo">
+                <span class="site-name">Abuja Chamber of Commerce</span>
+            <button id="menu" aria-label="Menu">&#9776;</button>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="c">Directory</a></li>
+                    <li><a href="services.html">Join Us</a></li>
+                    <li><a href="contact.html">Discover</a></li>
+                </ul>
+            </nav>
+            <button id="DarkToggle" aria-label="Toggle Dark Mode">🌙</button>
+        </div>
+    </header>
+    <section class="hero">
+        <img src="images/bize.jpg" alt="scalable, pesponsive hero image" width="600" height="300">
+        <div class="hero-text">
+            <h2>Empowering Local Businesses</h2>
+            <a href="#" class="cat-button">Join Now</a>
+        </div>
+    </section>
+    <main>
+        <h1>Home</h1>
+        <section class="info-grid">
+            <div class="card events">
+                <h2>Events</h2>
+                <p>Stay updated with our latest events and networking opportunities.</p>
+            </div>
+            <div class="info weather">
+                <h2>Current weather (Abuja)</h2>
+                <p><strong>73°F</strong>- Scattered thunderstorms</p>
+                <ul>
+                    <li>high: 77°F | low: 70°F</li>
+                    <li>Humidity: 96%</li>
+                    <li>Sunrise: 6:30 AM</li>
+                    <li>Sunset: 7:00 PM</li>
+                </ul>
+            </div>
+            <div class="card forecast">
+                <h2>Weather Forecast (Abuja)</h2>
+                <ul>
+                    <li>Monday: 75°F | Sunny</li>
+                    <li>Tuesday: 78°F | Partly Cloudy</li>
+                    <li>Wednesday: 76°F | Showers</li>
+                </ul>
+            </div>
+        </section>
+        <section class="businesses">
+            <div class="biz-card">
+                <h2 class="biz-name">Divine Option Technical</h2>
+                <p class="biz-tagline">Comprehensive electrical products & services</p>
+                <div class="biz-content">
+                    <img src="images/mye1.jpg" alt="Divine Option Technical">
+                    <div class="biz-info">
+                        <p class="label">Phone:</p>
+                        <p>+234 903 984 4917</p>
+                        <p class="label">Email:</p>
+                        <p>(no public email listed)</p>
+                        <p class="label">URL:</p>
+                        <p>ptiontechnical.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="biz-card">
+                <h2 class="biz-name">JRB Solar Investment Limited</h2>
+                <p class="biz-tagline">Solar solutions & consultancy</p>
+                <div class="biz-content">
+                    <img src="images/mye.jpg" alt="JRB Solar Investment Limited">
+                    <div class="biz-info">
+                        <p class="label">Phone:</p>
+                        <p>(no public phone listed)</p>
+                        <p class="label">Email:</p>
+                            <p>(no public email listed)</p>
+                        <p class="label">URL:</p>
+                            <p>jrbsolar.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="biz-card">
+                <h2 class="biz-name">Field Intelligence</h2>
+                <p class="biz-tagline">Business & tech intelligence solutions</p>
+                <div class="biz-content">
+                    <img src="images/mye2.jpg" alt="Field Intelligence">
+                    <div class="biz-info">
+                        <p class="label">Phone:</p>
+                        <p>(no public phone listed)</p>
+                        <p class="label">Email:</p>
+                        <p>hi@field.inc</p>
+                        <p class="label">URL:</p>
+                        <p>field.inc</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-info">
+        <p><strong>Abuja Chamber of Commerce</strong><br>
+            10 Rue De La Paix<br>
+            Abuja, Nigeria 999<br>
+            info@abujacc.org<br>
+            (234) 704-023-7963
+        </p>
+        </div>
+        <div class="social">
+        <a href="#"><img src="images/github-4.png" alt="github"></a>
+        <a href="#"><img src="images/twitter-1.png" alt="twitter"></a>
+        <a href="#"><img src="images/linkedin-4.png" alt="linkedin"></a>
+        </div>
+        <div class="credit">
+            <p>WDD231 Class Project</p>
+            <p>Developed by Christian Emmanuel David </p>
+            <p>&copy; <span id="year"></span> | Christian Emmanuel David | Abuja Nigeria</p>
+            <p id="lastModified"></p>
+        </div>
+  </footer>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/navigation.js"></script>
+</body>
+</html>
