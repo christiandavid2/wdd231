@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Thank You for Applying!</h1>
+    <p>We appreciate your interest. Here is the information you submitted:</p>
+
+    <div id="confirmation"></div>
+
+    <a href="join.html">Go back to form</a>
+  </main>
+
+  <script>
+    // Display submitted values
+    const params = new URLSearchParams(window.location.search);
+    const requiredFields = ["firstName", "lastName", "email", "mobile", "organization", "timestamp"];
+    let html = "<ul>";
+    requiredFields.forEach(f => {
+      html += `<li><strong>${f}</strong>: ${params.get(f) || "N/A"}</li>`;
+    });
+    html += "</ul>";
+    document.getElementById("confirmation").innerHTML = html;
+  </script>
+</body>
+</html>

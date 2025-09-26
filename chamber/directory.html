@@ -1,46 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sunrise Chamber Directory — WDD 231</title>
-  <meta name="description" content="Directory of local businesses and members of the Sunrise Chamber. Find members, addresses, contacts, and membership level." />
-  <meta name="author" content="Christian Emmanuel david" />
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="styles/normalize.css" />
-  <link rel="stylesheet" href="styles/styles.css" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sunrise Chamber Directory" />
-  <meta property="og:description" content="Browse local businesses, contact details, and membership levels in the Sunrise Chamber." />
-  <meta property="og:image" content="https://your-username.github.io/your-repo/images/og-image.png" />
-  <meta property="og:url" content="https://your-username.github.io/your-repo/directory.html" />
-  <meta property="og:site_name" content="Sunrise Chamber" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Sunrise Chamber Directory" />
-  <meta name="twitter:description" content="Browse local businesses, contact details, and membership levels in the Sunrise Chamber." />
-  <meta name="twitter:image" content="https://your-username.github.io/your-repo/images/og-image.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="chamber of commerce" />
+    <meta name="author" content="Christian Emmanuel David" />
+    <meta property="og:title" content="WDD 231 - Home" />
+    <meta property="og:description" content="WDD 231 Home Page" />
+    <meta property="og:image" content="image/favicon.ico" />
+    <meta property="og:url" content="https://christiandavid2.github.io/wdd231/" />
+    <title>Membership Application</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber_small.css">
+    <link rel="stylesheet" href="styles/chamber_larger.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/directory.js" type="module"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a href="index.html" class="brand">
-        <img src="images/lokg.jpg" alt="Sunrise Chamber logo" class="logo" />
-        <span class="site-title">Sunrise Chamber</span>
-      </a>
-
-      <button id="nav-toggle" class="nav-toggle" aria-expanded="false">Menu</button>
-
-      <nav id="main-nav" class="main-nav" aria-label="Main Navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="directory.html" class="active">Directory</a></li>
-          <li><a href="discover.html">Discover</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+<header>
+    <div class="header-content">
+        <img src="images/lokg.jpg" alt="Chamber Logo" class="logo">
+        <span class="site-name">Abuja Chamber of Commerce</span>
+         <button id="menu" aria-label="Menu">&#9776;</button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="indxe.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="contact.html">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="DarkToggle" aria-label="Toggle Dark Mode">🌙</button>
     </div>
-  </header>
+</header>
 
   <main class="wrap main-content">
     <section class="controls">
@@ -63,26 +59,27 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <div class="contact">
-        <p><strong>Your Full Name</strong></p>
-        <p>WDD 231 — Sunrise Chamber Project</p>
-        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      </div>
-      <div  class= social>
-        <a href="https://github.com/christiandavid2" ><img src="images/github-4.png" alt="GitHub"></a>
-        <a href="http://linkedin.com/in/christian-david-62576a31a" ><img src="images/linkedin-4.png" alt="LinkedIn"></a>
-        <a href="https://x.com/cemmanuel833?s=21" ><img src="images/twitter-1.png" alt="Twitter"></a>
-      </div>
-
-      <div class="dev-info">
-        <p>&copy; <span id="copyright-year"></span> Sunrise Chamber</p>
-        <p>Last modified: <span id="last-modified"></span></p>
-      </div>
+ <footer>
+    <div class="footer-info">
+    <p><strong>Abuja Chamber of Commerce</strong><br>
+        10 Rue De La Paix<br>
+        Abuja, Nigeria 999<br>
+        info@abujacc.org<br>
+        (234) 704-023-7963
+    </p>
     </div>
-  </footer>
-
-  <script src="scripts/directory.js" type="module"></script>
+    <div class="social">
+    <a href="#"><img src="images/github-4.png" alt="github"></a>
+    <a href="#"><img src="images/twitter-1.png" alt="twitter"></a>
+    <a href="#"><img src="images/linkedin-4.png" alt="linkedin"></a>
+    </div>
+    <div class="credit">
+        <p>WDD231 Class Project</p>
+        <p>Developed by Christian Emmanuel David </p>
+        <p>&copy; <span id="year"></span> | Christian Emmanuel David | Abuja Nigeria</p>
+        <p id="lastModified"></p>
+    </div>
+</footer>
+<script src="scripts/navigation.js" type="module"></script>
 </body>
 </html>

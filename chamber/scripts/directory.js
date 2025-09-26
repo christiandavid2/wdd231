@@ -23,13 +23,12 @@ function createCard(member){
   const div = document.createElement('article');
   div.className = 'member-card';
   div.innerHTML = `
-    <img src="${member.image}"  logo" onerror="this.src='images/default.png'">
+    <img src="${member.image}" alt="${member.name} logo" onerror="this.src='images/default.png'">
     <div class="member-info">
-      <h3 class="sidname">${member.name}</h3>
+      <h3><a href="${member.website}" target="_blank" rel="noopener">${member.name}</a></h3>
       <p class="muted">${member.address}</p>
       <p class="muted">${member.phone}</p>
       <p>${member.description || ''}</p>
-      <h4><a href="${member.website}" target="_blank" rel="noopener">${member.name} </a></h3>
       <p class="${membershipLabel(member.membership).className}">${membershipLabel(member.membership).text}</p>
     </div>
   `;
@@ -85,17 +84,5 @@ function setListView(){
 gridBtn.addEventListener('click', () => setGridView());
 listBtn.addEventListener('click', () => setListView());
 membershipFilter.addEventListener('change', applyFilterAndRender);
-
-// Mobile nav toggle
-navToggle.addEventListener('click', () => {
-  const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-  navToggle.setAttribute('aria-expanded', String(!expanded));
-  mainNav.style.display = expanded ? 'none' : 'block';
-});
-
-// Footer dynamic info
-document.getElementById('copyright-year').textContent = new Date().getFullYear();
-document.getElementById('last-modified').textContent = document.lastModified || 'Unknown';
-
-// Start
 loadMembers();
+

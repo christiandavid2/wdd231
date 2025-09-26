@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="chamber of commerce" />
+    <meta name="author" content="Christian Emmanuel David" />
+    <meta property="og:title" content="WDD 231 - Home" />
+    <meta property="og:description" content="WDD 231 Home Page" />
+    <meta property="og:image" content="image/favicon.ico" />
+    <meta property="og:url" content="https://christiandavid2.github.io/wdd231/" />
+    <title>Membership Application</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber_small.css">
+    <link rel="stylesheet" href="styles/chamber_larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <img src="images/lokg.jpg" alt="Chamber Logo" class="logo">
+        <span class="site-name">Abuja Chamber of Commerce</span>
+         <button id="menu" aria-label="Menu">&#9776;</button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="indxe.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="contact.html">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="DarkToggle" aria-label="Toggle Dark Mode">🌙</button>
+    </div>
+</header>
+  <main>
+
+    <!-- Form -->
+    <form method="get" action="thankyou.html">
+        <h1>Membership Application Form</h1>
+      <!-- First Name -->
+      <label>
+        First Name:
+        <input type="text" name="firstName" title="Enter your first name" 
+               autocomplete="given-name" required>
+      </label>
+
+      <!-- Last Name -->
+      <label>
+        Last Name:
+        <input type="text" name="lastName" title="Enter your last name" 
+               autocomplete="family-name" required>
+      </label>
+
+      <!-- Organizational Title -->
+      <label>
+        Organizational Title:
+        <input type="text" name="organizationTitle" 
+               title="Your organizational title (letters, hyphens, spaces only, min 7 characters)" 
+               autocomplete="organization-title"
+               pattern="[A-Za-z\s-]{7,}">
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" title="Enter a valid email address"
+               autocomplete="email" placeholder="example@email.com" required>
+      </label>
+
+      <!-- Mobile -->
+      <label>
+        Mobile Phone:
+        <input type="tel" name="mobile" title="Enter your mobile number"
+               autocomplete="tel" required>
+      </label>
+
+      <!-- Organization -->
+      <label>
+        Organization Name:
+        <input type="text" name="organization" title="Your organization’s name"
+               autocomplete="organization" required>
+      </label>
+
+      <!-- Membership Level -->
+      <fieldset>
+        <legend>Membership Level</legend>
+        <label><input type="radio" name="membership" value="NP" required> NP Membership (No fee)</label>
+        <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+        <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+        <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+      </fieldset>
+
+      <!-- Description -->
+      <label>
+        Organization Description:
+        <textarea name="description" title="Brief description of your organization"></textarea>
+      </label>
+
+      <!-- Hidden Timestamp -->
+      <input type="hidden" name="timestamp" id="timestamp">
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit Application">
+
+    </form>
+
+    <!-- Membership Cards -->
+    <section class="membership-cards">
+      <article class="card">
+        <h2>NP Membership</h2>
+        <p>No fee, nonprofit organizations only.</p>
+        <a href="#" data-modal="np-modal">View Benefits</a>
+      </article>
+
+      <article class="card">
+        <h2>Bronze Membership</h2>
+        <p>Basic benefits package.</p>
+        <a href="#" data-modal="bronze-modal">View Benefits</a>
+      </article>
+
+      <article class="card">
+        <h2>Silver Membership</h2>
+        <p>Extended benefits, mid-level option.</p>
+        <a href="#" data-modal="silver-modal">View Benefits</a>
+      </article>
+
+      <article class="card">
+        <h2>Gold Membership</h2>
+        <p>Premium benefits package.</p>
+        <a href="#" data-modal="gold-modal">View Benefits</a>
+      </article>
+    </section>
+
+    <!-- Modals -->
+    <dialog id="np-modal">
+      <button class="close">❌</button>
+      <h3>NP Membership Benefits</h3>
+      <ul>
+        <li>No membership fee</li>
+        <li>Community recognition</li>
+        <li>Event participation</li>
+      </ul>
+    </dialog>
+
+    <dialog id="bronze-modal">
+      <button class="close">❌</button>
+      <h3>Bronze Membership Benefits</h3>
+      <ul>
+        <li>Basic advertising</li>
+        <li>Discounted events</li>
+      </ul>
+    </dialog>
+
+    <dialog id="silver-modal">
+      <button class="close">❌</button>
+      <h3>Silver Membership Benefits</h3>
+      <ul>
+        <li>Premium advertising spots</li>
+        <li>Free training workshops</li>
+      </ul>
+    </dialog>
+
+    <dialog id="gold-modal">
+      <button class="close">❌</button>
+      <h3>Gold Membership Benefits</h3>
+      <ul>
+        <li>Spotlight positions on homepage</li>
+        <li>Exclusive events access</li>
+        <li>Highest discounts</li>
+      </ul>
+    </dialog>
+    </div>
+
+  </main>
+
+  <script>
+    // Fill timestamp
+    document.getElementById("timestamp").value = new Date().toISOString();
+
+    // Modal logic
+    const links = document.querySelectorAll("[data-modal]");
+    const modals = document.querySelectorAll("dialog");
+    const closes = document.querySelectorAll(".close");
+
+    links.forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const modal = document.getElementById(link.dataset.modal);
+        modal.showModal();
+      });
+    });
+
+    closes.forEach(btn => {
+      btn.addEventListener("click", e => {
+        btn.closest("dialog").close();
+      });
+    });
+  </script>
+<footer>
+    <div class="footer-info">
+    <p><strong>Abuja Chamber of Commerce</strong><br>
+        10 Rue De La Paix<br>
+        Abuja, Nigeria 999<br>
+        info@abujacc.org<br>
+        (234) 704-023-7963
+    </p>
+    </div>
+    <div class="social">
+    <a href="#"><img src="images/github-4.png" alt="github"></a>
+    <a href="#"><img src="images/twitter-1.png" alt="twitter"></a>
+    <a href="#"><img src="images/linkedin-4.png" alt="linkedin"></a>
+    </div>
+    <div class="credit">
+        <p>WDD231 Class Project</p>
+        <p>Developed by Christian Emmanuel David </p>
+        <p>&copy; <span id="year"></span> | Christian Emmanuel David | Abuja Nigeria</p>
+        <p id="lastModified"></p>
+    </div>
+</footer>
+<script src="scripts/data.js"></script>
+<script src="scripts/navigation.js"></script>
+</body>
+</html>
