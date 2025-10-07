@@ -17,8 +17,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber_small.css">
     <link rel="stylesheet" href="styles/chamber_larger.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/directory.js" type="module"></script>
+    <link rel="stylesheet" href="styles/discover.css">
 </head>
 <body>
 <header>
@@ -34,32 +33,16 @@
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
-        <button id="DarkToggle" aria-label="Toggle Dark Mode">🌙</button>
     </div>
+    <button id="DarkToggle" aria-label="Toggle Dark Mode">🌙</button>
 </header>
-
-  <main class="wrap main-content">
-    <section class="controls">
-      <div class="view-controls">
-        <button id="grid-btn" aria-pressed="true">Grid View</button>
-        <button id="list-btn" aria-pressed="false">List View</button>
-      </div>
-      <div class="filter-controls">
-        <label for="membership-filter">Membership:</label>
-        <select id="membership-filter">
-          <option value="all">All</option>
-          <option value="1">Member</option>
-          <option value="2">Silver</option>
-          <option value="3">Gold</option>
-        </select>
-      </div>
-    </section>
-
-    <section id="members-container" class="members grid-view" aria-live="polite">
-    </section>
-  </main>
-
- <footer>
+<main>
+    <h1>Discover Abuja Nigeria</h1>
+    <aside id="visit-message"></aside>
+    <section class="discover-grid" id="discover-cards"></section>
+    <dialog id="more-details"></dialog>
+</main>
+<footer>
     <div class="footer-info">
     <p><strong>Abuja Chamber of Commerce</strong><br>
         10 Rue De La Paix<br>
@@ -80,6 +63,8 @@
         <p id="lastModified"></p>
     </div>
 </footer>
-<script src="scripts/navigation.js" type="module"></script>
+<script src="scripts/data.js"></script>
+<script src="scripts/navigation.js"></script>
+<script src="scripts/discover.js"></script>
 </body>
 </html>

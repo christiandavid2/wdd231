@@ -1,0 +1,50 @@
+[
+  {
+    "name": "National Stadium",
+    "address": "National Stadium, Abuja, Nigeria",
+    "description": "A multi-purpose stadium that hosts football matches, concerts, and national events.",
+    "image": "images/myi.png"
+  },
+  {
+    "name": "Jabi Lake Mall",
+    "address": "Jabi District, Abuja, Nigeria",
+    "description": "A modern shopping mall with restaurants, cinemas, and fashion outlets.",
+    "image": "images/my1.png"
+  },
+  {
+    "name": "Millennium Park",
+    "address": "Maitama District, Abuja, Nigeria",
+    "description": "The largest public park in Abuja, perfect for picnics, walks, and family outings.",
+    "image": "images/my3.png"
+  },
+  {
+    "name": "Aso Rock",
+    "address": "Asokoro, Abuja, Nigeria",
+    "description": "A prominent 400-meter monolith and one of Abuja’s most famous landmarks.",
+    "image": "images/my2.png"
+  },
+  {
+    "name": "National Mosque",
+    "address": "Central Area, Abuja, Nigeria",
+    "description": "An architectural masterpiece and a symbol of faith in Nigeria.",
+    "image": "images/my4.png"
+  },
+  {
+    "name": "National Christian Centre",
+    "address": "Central Business District, Abuja, Nigeria",
+    "description": "A major cathedral known for its neo-gothic design and tall spires.",
+    "image": "images/my5.png"
+  },
+  {
+    "name": "Jabi Lake",
+    "address": "Jabi District, Abuja, Nigeria",
+    "description": "A serene lake offering boat rides, relaxation spots, and open-air hangouts.",
+    "image": "images/my6.png"
+  },
+  {
+    "name": "Art & Craft Village",
+    "address": "Central Area, Abuja, Nigeria",
+    "description": "A cultural hub where artisans sell handmade crafts, artworks, and souvenirs.",
+    "image": "images/my7.png"
+  }
+]
