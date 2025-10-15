@@ -1,0 +1,17 @@
+[
+{"name": "Floral Summer Dress", "description": "Light and breezy floral dress perfect for summer.", "price": 8500, "image": "images/floral-dress.jpg"},
+{"name": "Denim Jacket", "description": "Classic denim jacket with modern fit.", "price": 12000, "image": "images/fashon17.jpg"},
+{"name": "Black Heels", "description": "Elegant heels for formal occasions.", "price": 9500, "image": "images/fashon1.jpg"},
+{"name": "Men’s Slim-Fit Shirt", "description": "Smart casual shirt for everyday wear.", "price": 11000, "image": "images/men16.jpg"},
+{"name": "Casual Sneakers", "description": "Comfortable sneakers for daily use.", "price": 10500, "image": "images/men8.jpg"},
+{"name": "Ladies Handbag", "description": "Trendy handbag with spacious design.", "price": 13000, "image": "images/fashon11.jpg"},
+{"name": "Men’s Blazer", "description": "Stylish blazer for office or event.", "price": 18000, "image": "images/blazer.jpg"},
+{"name": "Evening Gown", "description": "Graceful long gown for special occasions.", "price": 25000, "image": "images/wemen5.jpg"},
+{"name": "Casual T-shirt", "description": "Soft cotton T-shirt available in multiple colors.", "price": 6000, "image": "images/men15.jpg"},
+{"name": "Ankara Dress", "description": "Beautifully patterned African Ankara dress.", "price": 14500, "image": "images/fashion20.JPG"},
+{"name": "Men’s Polo Shirt", "description": "Classic polo shirt for smart casual style.", "price": 9500, "image": "images/men14.jpg"},
+{"name": "Leather Belt", "description": "High-quality leather belt with fine finish.", "price": 5000, "image": "images/Leather-Belt.jpg"},
+{"name": "Women’s Sunglasses", "description": "Chic sunglasses for sunny days.", "price": 7000, "image": "images/sunglasses.jpg"},
+{"name": "Men’s Watch", "description": "Luxury wristwatch with durable design.", "price": 20000, "image": "images/watch.jpg"},
+{"name": "Silk Scarf", "description": "Soft silk scarf for elegant layering.", "price": 5500, "image": "images/scarf.jpg"}
+]
